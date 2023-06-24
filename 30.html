@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<head>
+
+    <initial-scale=1.0">
+ <link rel=”shortcut icon” href=”channels4_profile.jpg” width=”50px” type=”image/x-icon”>
+ <title>shaun Restaurant</title>
+ <link rel=”stylesheet” href=”style.css”>
+
+</head>
+<style>
+
+
+
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container2 {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+
+.button-1 {
+      background-color: #EA4C89;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #ed;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+    
+    .button-1:hover,
+    .button-1:focus {
+      background-color: #F082AC;
+    }
+    
+
+
+
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+    
+    
+    
+
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+  
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;}
+.div1 {
+    border-color: black;
+    font-size: 2rem;
+    }
+    
+.div2 {
+        border-color: brown;
+        font-size: 2rem;
+        font-family: 'Times New Roman';
+        }
+
+        </style>
+
+<body>
+
+
+    <h1>Using the var() Function</h1>
+  
+    <div class="container2">
+      <h2>Shaun Sheep hi </h2>
+      <p>Shaun Sheep wellcome
+      </p>
+      <p>Shaun Sheep hello </p>
+      <p>
+        <button>Yes</button>
+        <button>No</button>
+      </p>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="header">
+        <h1>shauna sheep</h1>
+      </div>
+      
+      <div class="row">
+        <div class="col-3 menu">
+          <ul>
+          <li>shaun Flight</li>
+          <li>shaunCity</li>
+          <li>shaun Island</li>
+          <li>shaunFood</li>
+          </ul>
+        </div>
+      
+        <div class="col-6">
+          <h1>The shaun City</h1>
+          <p>shaun is the capital of the shaun sheep region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
+      
+        <div class="col-3 right">
+          <div class="aside">
+            <h2>What?</h2>
+            <p>shaun is a city on the island of Crete.</p>
+            <h2>Where?</h2>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+            <h2>How?</h2>
+            <p>You can reach shaun airport from all over Europe.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
+    
+    <div class="footer">
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+  
+
+
+
+
+    <div class="container">
+		<div class="intro">
+			<img src="channels4_profile.jpg" />
+			<img src="channels4_profile.jpg" />
+			<h1><farok style="color: aqua;">farok team</h1>
+			<h1><style></style> Developer At shaunshep</h1>
+           
+
+    <img src="channels4_profile.jpg" alt="shaun">
+<div class="div1"><img src="channels4_profile.jpg" alt="shaun"></div>
+<div class="div2"></div>
+
+<div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+
+
+<nav class="sticky">
+	<ul>
+		<li><a href="#a">Section A</a></li>
+		<li><a href="#b">Section B</a></li>
+		<li><a href="#c">Section C</a></li>
+		<li><a href="#d">Section D</a></li>
+	</ul>
+</nav>
+
+<button class="button-1" role="button">Button 1</button>
+<button class="button-5" role="button">Button 5</button>
+<button class="button-3" role="button">Button 3</button>
+<button class="button-7" role="button">Button 7</button>
+
+
+
+<! — Wrap everything in a container →
+<div class=”container”>
+<! — Header →
+<div class=”header”>
+<nav>
+<img class=”site-logo” src=”channels4_profile.jpg” alt=”logo”>
+<h1 class=”site-title”>Dreams</h1>
+</nav>
+</div>
+<! — End of Header. ->
+<! — Main content container ->
+<div class=”main”>
+<div class=”redline long”></div>
+<div class=”about”>
+<h1 class=”title-head”>Tingle your <br> Tastebuds</h1>
+<h2 class=”grilled”>shaun Grilled Chicken</h2>
+<p class=”p1">shaun ac feugiat sed lectus. Cursus sit amet dictum sit amet.</p>
+</div>
+<p class=”p2">shaun diam in arcu cursus euismod quis viverra. Eget gravida</p>
+<div class=”redline small”></div>
+<p class=”p3"> shaun natoque penatibus et magnis.</p>
+</div>
+<! — End of Main Content →
+<! — Wrap the buttons in a div. →
+<div class=”buttons”>
+<button class=”menu-button”>View Menu</button>
+<button class=”book-table”>Book a Table</button> 
+</div>
+<! — Wrap lunch and time in a div. →
+<div class=”lunch-time”>
+<h1 class=”lunch”>Lunch</h1>
+<h1 class=”time”>12:00 am — 4:00 pm</h1>
+<img src=”channels4_profile.jpg” class=”arrow” alt=”arrow”> 
+</div>
+<! — Wrap lunch and time in a div. →
+</div>
+<! — Wrap everything in a container →
+ 
+
+</body> 
+</html>
